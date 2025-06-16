@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Carro - AutoTop</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="vendedor.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">AutoTop</div>
+        <nav id="navbar"></nav>
+    </header>
+
+    <main>
+        <div class="vendedor-container">
+            <h1>Cadastrar Novo Carro</h1>
+            <form id="carForm" class="car-form">
+                <div class="form-group">
+                    <label for="marca">Marca</label>
+                    <input type="text" id="marca" required placeholder="Ex: Chevrolet">
+                </div>
+                <div class="form-group">
+                    <label for="modelo">Modelo</label>
+                    <input type="text" id="modelo" required placeholder="Ex: Onix">
+                </div>
+                <div class="form-group">
+                    <label for="ano">Ano</label>
+                    <input type="number" id="ano" required min="1900" max="2025" placeholder="Ex: 2022">
+                </div>
+                <div class="form-group">
+                    <label for="preco">Preço</label>
+                    <input type="number" id="preco" required min="0" step="0.01" placeholder="Ex: 69000">
+                </div>
+                <div class="form-group">
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" required rows="4" placeholder="Descreva o carro..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Cadastrar Carro</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AutoTop. feito por Eric Pires</p>
+    </footer>
+
+    <script src="../../js.js"></script>
+    <script src="vendedor.js"></script>
+</body>
+
+</html>

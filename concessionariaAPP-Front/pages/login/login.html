@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AutoTop</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">AutoTop</div>
+        <nav id="navbar">
+            <a href="../../index.html">Carros</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="auth-container">
+            <form id="loginForm" class="auth-form">
+                <h2>Login</h2>
+                <div class="form-group">
+                    <input type="email" id="loginEmail" required placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="password" id="loginPassword" required placeholder="Senha">
+                </div>
+                <button type="submit">Entrar</button>
+                <p class="switch-form">
+                    Não tem uma conta? <a href="#" onclick="toggleForm('register')">Criar conta</a>
+                </p>
+            </form>
+
+            <form id="registerForm" class="auth-form hidden">
+                <h2>Criar Conta</h2>
+                <div class="form-group">
+                    <input type="text" id="registerName" required placeholder="Nome">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="registerEmail" required placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="password" id="registerPassword" required placeholder="Senha">
+                </div>
+                <button type="submit">Cadastrar</button>
+                <p class="switch-form">
+                    Já tem uma conta? <a href="#" onclick="toggleForm('login')">Fazer login</a>
+                </p>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 AutoTop. feito por Eric Pires</p>
+    </footer>
+    <script src="login.js"></script>
+
+</body>
+
+</html>
